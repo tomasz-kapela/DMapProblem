@@ -1,7 +1,7 @@
 # Działa poprawnie z 01
-OPTYMALIZACJA=-O1
+#OPTYMALIZACJA=-O1
 # Blędne wyniki z optymalizacja 02
-# OPTYMALIZACJA=-O2
+ OPTYMALIZACJA=-O2
 
 COMPFLAGS = ${OPTYMALIZACJA} -std=c++17 -g3 -Wall -pedantic
 
