@@ -1,5 +1,10 @@
 # DMapProblem
 
+This code gives not correct result in GCC 10, 11, 12 but only with `O2` optimization.
+
+Without optimization or with older compilers the result is correct.
+
+**Is it a bug in the program or compiler bug?**
 
 ## Compilation
 
@@ -43,12 +48,12 @@ Changes that gives correct results:
   else
     *result = *left - *right;
   ```
-  
   with
   
   ```cpp
   result[coeffNo] = (coeffNo!=0) ? -right[coeffNo] : *left - *right;
   ```
   
-* 
+* printing debug information in `evalC0` function.
 
+* using compiler gcc8.4 (tested) or earlier (not tested)
