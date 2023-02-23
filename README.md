@@ -40,6 +40,7 @@ The problem seems to be localized in `include/capd/autodiff/EvalSub.h` in **Cons
 
 Changes that gives correct results:
 * switching optimalization to `O0`, `O1`
+* turning off partial inlining optimalization: `-O2 -fno-partial-inlining`
 * replacing lines 75-78 in `include/capd/autodiff/EvalSub.h`:
   
   ```cpp
